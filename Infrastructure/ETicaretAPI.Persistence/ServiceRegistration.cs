@@ -22,6 +22,16 @@ namespace ETicaretAPI.Persistence
             services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+            services.AddScoped<IExerciseReadRepository, ExerciseReadRepository>();
+            services.AddScoped<IExerciseWriteRepository, ExerciseWriteRepository>();
+            services.AddScoped<ICategoryReadRepository, CategoryReadRepository>();
+            services.AddScoped<ICategoryWriteRepository, CategoryWriteRepository>();
+            services.AddScoped<ICategoryImageWriteRepository, CategoryImageWriteRepository>();
+            services.AddScoped<ICategoryImageReadRepository, CategoryImageReadRepository>();
+            services.AddScoped<IExerciseImageReadRepository, ExerciseImageReadRepository>();
+            services.AddScoped<IExerciseImageWriteRepository, ExerciseImageWriteRepository>();
+            services.AddScoped<IExerciseVideoReadRepository, ExerciseVideoReadRepository>();
+            services.AddScoped<IExerciseVideoWriteRepository, ExerciseVideoWriteRepository>();
         }
     }
 }
